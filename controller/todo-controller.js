@@ -35,7 +35,7 @@ async function addTodo(req, res, next) {
 
 async function updateTodo(req, res, next) {
   const todoId = req.params.id;
-  const newTodoText = req.body.text;
+  const newTodoText = req.body.newText;
 
   const todo = new Todo(newTodoText, todoId);
   try {
